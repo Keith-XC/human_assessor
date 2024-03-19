@@ -56,12 +56,12 @@ plt.show(block=False)
 input_digits = []
 
 for i in range(1, 21):
-    plt.pause(0.5)
+    plt.pause(2)
     input_human = input(f"Q{i} Please give your prediction separated by commas: ")
     while invalid_input(input_human):
         input_human = input(f"Q{i} Invalid input. Please give your prediction separated by commas again: ")
     csv_logger(path, input_human.split(','))
-    plt.pause(0.5)
+    plt.pause(1)
 
     if i == 20:
         break
