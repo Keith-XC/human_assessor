@@ -72,5 +72,5 @@ for i in range(1, 21):
     ax.autoscale()
     ax.set_title(f"Questionnaire {i+1}")
 
-print(input_digits)
+print("Thank you!")
 
