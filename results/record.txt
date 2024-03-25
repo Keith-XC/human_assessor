@@ -1,0 +1,12 @@
+XAI validity rate by AS is 0.84
+XAI preservation rate by AS is 0.71
+Random validity rate by AS is 0.85
+Random preservation rate by AS is 0.64
+XAI validity rate by Stefano is 0.865
+XAI preservation rate by Stefano is 0.725
+Random validity rate by Stefano is 0.83
+Random preservation rate by Stefano is 0.625
+XAI validity rate by Thao is 0.845
+XAI preservation rate by Thao is 0.64
+Random validity rate by Thao is 0.785
+Random preservation rate by Thao is 0.575

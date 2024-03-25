@@ -25,7 +25,7 @@ def get_200_digit(path, initial_idx=0):
                  "id": idx
                     }
             idx += 1
-            csv_logger("log.csv", info)
+            csv_logger("results/log.csv", info)
         all = np.concatenate((all, select_digits))
     return all
 
@@ -56,7 +56,7 @@ def csv_logger(filepath: str, log_info: dict):
 
 
 def plot_400_digit():
-    df = pd.read_csv('log.csv')
+    df = pd.read_csv('results/log.csv')
     big_image_xai = np.zeros((560, 280))
     for i in range(20):
         for j in range(10):
@@ -85,7 +85,7 @@ def mixed_img():
     big_image = np.zeros((28, 280))
     idx_mix_order = np.random.permutation(400)
     print(idx_mix_order)
-    df = pd.read_csv("log.csv")
+    df = pd.read_csv("results/log.csv")
     np.save(os.path.join("img",'idx_mix_order.npy'), idx_mix_order)
     for i in range(400):
         path = df[df['id']==idx_mix_order[i]]['path'].values[0]
@@ -109,8 +109,8 @@ seed = 13
 np.random.seed(seed)
 print(seed)
 
-if os.path.exists("log.csv"):
-    os.remove("log.csv")
+if os.path.exists("results/log.csv"):
+    os.remove("results/log.csv")
 xai_all = get_200_digit(path_c, initial_idx=0)
 random_all = get_200_digit(path_r, initial_idx=200)
 plot_400_digit()

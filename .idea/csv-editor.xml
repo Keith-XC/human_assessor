@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/AS_log.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/log.csv">
           <value>
             <Attribute>
@@ -10,7 +17,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/results/AS_result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/results/Stefano Lambertenghi_result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/results/log.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
