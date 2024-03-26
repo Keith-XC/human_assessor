@@ -45,7 +45,8 @@ def add_one_assessor(human_result_path, summary_path):
 
 results = ["AS_result.csv",
            "Stefano_result.csv",
-           "Thao_result.csv"]
+           "Thao_result.csv",
+           "Davide_result.csv"]
 
 for res in results:
     add_one_assessor(human_result_path=os.path.join("results", res),
